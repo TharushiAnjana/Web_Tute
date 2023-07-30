@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+  <h2>Enter 5 marks:</h2>
+  <input type="number" id="mark1" placeholder="Mark 1"><br>
+  <input type="number" id="mark2" placeholder="Mark 2"><br>
+  <input type="number" id="mark3" placeholder="Mark 3"><br>
+  <input type="number" id="mark4" placeholder="Mark 4"><br>
+  <input type="number" id="mark5" placeholder="Mark 5"><br>
+  <button onclick="calculateGrade()">GRADE</button>
+
+  <script>
+    function calculateGrade() {
+      var mark1 = parseFloat(document.getElementById('mark1').value);
+      var mark2 = parseFloat(document.getElementById('mark2').value);
+      var mark3 = parseFloat(document.getElementById('mark3').value);
+      var mark4 = parseFloat(document.getElementById('mark4').value);
+      var mark5 = parseFloat(document.getElementById('mark5').value);
+
+      var total = mark1 + mark2 + mark3 + mark4 + mark5;
+      var average = total / 5;
+
+      alert("Sum is: " + total + " Average is: " + average.toFixed(2));
+
+      if (average > 30) {
+        alert("Congrats! You passed");
+      } else {
+        alert("Better luck next time");
+      }
+    }
+  </script>
+</body>
+</html>

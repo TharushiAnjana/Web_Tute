@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<title>Registration form</title>
+</head>
+
+<body><center>
+	<h1>Registration Form</h1>
+	<form  action="reg.php" method="post">
+	<table>
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="first"></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="last"></td>
+		</tr>
+		<tr>
+			<td>Mobile Number</td>
+			<td><input type="text" name="mb"></td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td><input type="radio" name="gen" value="mal">Male<input type="radio" name="gen" value="fem">Female</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="email" name="mail"></td>
+		</tr>
+		<tr>
+			<td>Favourite Music</td>
+			<td><input type="checkbox" name="po" value="Pop">Pop<input type="checkbox" name="Ro" value="Rock">Rock<input type="checkbox" name="Ot" value="other">Other</td>
+		</tr>
+		<tr>
+			<td>Additional Details</td>
+			<td><textarea name="addi" rows="4"></textarea></td>
+		</tr>
+		<tr>
+			
+			<td><input type="checkbox" name="agreement" value="agg">I agree to the terms and coditions</td>
+		</tr>
+		<tr>
+			
+			<td><input type="submit" name="sub" value="Submit"></td>
+			<td><input type="submit" name="sub" value="Reset"></td>
+
+		</tr>
+		
+	</table>
+	</form>
+	
+</center>
+</body>
+</html>

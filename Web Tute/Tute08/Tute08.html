@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function x()
+            {
+                document.bgColor="red";
+                document.fgColor="yellow";
+            }
+            function y()
+            {
+                document.bgColor="green";
+                document.fgColor="red";
+            }
+            function z()
+            {
+                document.bgColor="blue";
+                document.fgColor="green";
+            }
+
+        </script>
+    </head>
+    <body>
+<left><input type="button" name="d" value="red" onmouseover="x()" onmouseout="y()"></left>
+<right><input type="button" name="d1" value="green" onmouseover="y()" onmouseout="z()"></right>
+<right><input type="button" name="d2" value="blue" onmouseover="z()" onmouseout="x()"></right>
+
+    </body>
+</html>
